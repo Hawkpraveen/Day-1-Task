@@ -1,0 +1,100 @@
+﻿Task 2 -> Objects and its internal representation in Javascript
+
+* Objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs.
+
+
+* Objects can be created using the Object() constructor.
+
+
+* Objects consist of properties, which are used to describe an object.
+
+ Syntax: 
+const object = {
+  name: "Praveen",
+  age: 22,
+};
+
+*  Variables that are assigned a reference value are given a reference or a pointer to that value.
+Objects and properties
+
+*  The properties of an object define the characteristics of the object.  
+   Access the properties of an object with a simple dot-notation
+
+Syntax:
+objectName.propertyName
+*  For example,  creating an object named myCar and give it properties named make, model, and year as follows:
+
+var myCar = new Object();
+myCar.make = 'Ford';
+myCar.model = 'Mustang';
+myCar.year = 1969;
+
+* Properties of JavaScript objects can also be accessed or set using a bracket notation.
+
+myCar['make'] = 'Ford';
+myCar['model'] = 'Mustang';
+myCar['year'] = 1969;
+
+
+* Access properties by using a string value that is stored in a variable:
+
+var propertyName = 'make';
+myCar[propertyName] = 'Ford';propertyName = 'model';
+myCar[propertyName] = 'Mustang';
+
+Creating Objects In JavaScript :
+
+1. Create JavaScript Object with Object Literal
+
+Example code:
+
+let bike = {name: 'SuperSport', maker:'Ducati', engine:'937cc'};
+
+2. Create JavaScript Object with Constructor
+
+Example code:
+
+        function Person(first, last, age, eye) {
+  this.firstName = first;
+ this.lastName = last;
+ this.age = age;
+this.eyeColor = eye;
+}
+
+3. Using the JavaScript Keyword new
+
+Syntax:
+new constructorFunction(arguments);
+
+Example code:
+
+function Fruit(color, taste, seeds) {
+    this.color = color;
+    this.taste = taste;
+    this.seeds = seeds;
+}
+ 
+// Create an object
+const fruit1 = new Fruit('Yellow', 'Sweet', 1);
+ 
+// Display the result
+console.log(fruit1.color);
+
+4. Using the Object.create method
+
+Syntax:
+Object.create(prototype[, propertiesObject])
+
+Example code:
+
+        function fruits() { 
+                this.name = 'fruit 1'; 
+                this.season = 'summer'; 
+        } 
+        function apple() { 
+        fruits.call(this); 
+        } 
+        apple.prototype = Object.create(fruits.prototype); 
+        const app = new apple(); 
+        console.log(app.name); 
+        console.log(app.season);

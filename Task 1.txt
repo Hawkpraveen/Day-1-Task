@@ -1,0 +1,22 @@
+﻿Task 1- > Difference between  http 1.1 and http 2:
+
+
+HTTP/1.1:
+
+
+* Created in 1997 
+* Transfer all the requests & responses in the plain text message form.
+* It uses request resource Inlining for getting multiple pages .
+* Multiple TCP connections.
+* Relies on the transport layer to avoid buffer overflow.
+
+
+ 
+HTTP/2:
+
+
+* Created in 2015.
+* Converts all the messages in binary format
+* It uses a PUSH frame by server that collects all multiple pages.
+* Single connection object between the two machines.
+* Controls data flow on the level of the application layer.
